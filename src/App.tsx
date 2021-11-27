@@ -5,12 +5,15 @@ import Books from "./pages/Books/Books";
 import Travel from "./pages/Travel/Travel";
 import Error from "./pages/Error/Error";
 
+import Navbar from "./components/Navbar/Navbar";
+
 import "./App.scss";
 
 function App() {
 	return (
 		<div className='app'>
 			<BrowserRouter>
+				<Navbar />
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />

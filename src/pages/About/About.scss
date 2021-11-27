@@ -1,0 +1,42 @@
+.about-container {
+	background-image: none;
+	background-color: #fbf6ee;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	height: 90%;
+
+	.column {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+
+		.divider-line {
+			height: 1px;
+			background-color: #a0998c;
+			width: 465px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.description {
+			padding: 16px;
+
+			.text {
+				font-size: 14px;
+			}
+
+			.header {
+				margin: 0px;
+			}
+		}
+
+		.img-container {
+			margin-left: auto;
+			margin-right: auto;
+
+			.image {
+				border-radius: 8px;
+			}
+		}
+	}
+}
