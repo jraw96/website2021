@@ -1,10 +1,14 @@
-import React from 'react';
-import './Books.scss';
+import Navbar from "../../components/Navbar/Navbar";
+import "./Books.scss";
 
 function Books() {
-    return (<div className="App">
-        <h1>Books page</h1>
-    </div>);
+	return (
+		<div>
+			<div className='App'>
+				<Navbar />
+			</div>
+		</div>
+	);
 }
 
 export default Books;

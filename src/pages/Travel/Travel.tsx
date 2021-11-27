@@ -1,10 +1,12 @@
-import React from 'react';
-import './Travel.scss';
+import Navbar from "../../components/Navbar/Navbar";
+import "./Travel.scss";
 
 function Travel() {
-    return (<div className="App">
-        <h1>Travel page</h1>
-    </div>);
+	return (
+		<div className='app'>
+			<Navbar />
+		</div>
+	);
 }
 
 export default Travel;

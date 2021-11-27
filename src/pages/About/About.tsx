@@ -1,10 +1,15 @@
-import React from 'react';
-import './About.scss';
+import Navbar from "../../components/Navbar/Navbar";
+
+import "./About.scss";
 
 function About() {
-    return (<div className="App">
-        <h1>About page</h1>
-    </div>);
+	return (
+		<div>
+			<div className='App'>
+				<Navbar />
+			</div>
+		</div>
+	);
 }
 
 export default About;

@@ -1,0 +1,33 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+
+		.details {
+			display: flex;
+			flex-direction: column;
+			text-align: right;
+			padding: 10px;
+
+			.detail {
+				display: flex;
+				justify-content: flex-end;
+
+				.text {
+					font-size: 14px;
+					color: white;
+				}
+
+				.bold {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
