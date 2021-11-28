@@ -45,6 +45,9 @@ a:focus::after {
 .background-color {
 	background-color: #fbf6ee;
 	border-radius: 8px;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.2s linear;
 }
 
 .row {
