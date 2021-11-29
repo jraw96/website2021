@@ -6,7 +6,7 @@ function Navbar() {
 	const [value, setValue] = useState(0);
 	return (
 		<nav
-			className={`${
+			className={`nav-container ${
 				window.location.pathname !== "/" ? "background-color" : ""
 			}`}
 		>

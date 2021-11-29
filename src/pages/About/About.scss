@@ -1,34 +1,40 @@
 .about-container {
-	background-image: none;
-	background-color: #fbf6ee;
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
-	height: 90%;
+  background-image: none;
+  background-color: #fbf6ee;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 
-	.column {
-		display: flex;
-		flex-direction: column;
+  // Add spacing to compensate the navbar
+  padding-top: 61px;
+  //height: 553px;
+  margin-bottom: 196px;
+  border-radius: 8px;
 
-		.description {
-			padding: 16px;
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 
-			.text {
-				font-size: 14px;
-			}
+    .description {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
 
-			.header {
-				margin: 0px;
-			}
-		}
+      .text {
+        font-size: 14px;
+      }
 
-		.img-container {
-			margin-left: auto;
-			margin-right: auto;
-			padding-bottom: 10px;
+      .header {
+        margin: 0px;
+      }
+    }
 
-			.image {
-				border-radius: 8px;
-			}
-		}
-	}
+    .img-container {
+      padding-left: 10px;
+
+      .image {
+        border-radius: 8px;
+      }
+    }
+  }
 }

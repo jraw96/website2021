@@ -1,68 +1,78 @@
 li {
-	font-size: 18px;
-	list-style-type: none;
+  font-size: 18px;
+  list-style-type: none;
 }
 
 /* Underline styles */
 a {
-	display: block;
-	position: relative;
-	text-decoration: none;
-	color: #2b394a;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #2b394a;
 }
 
 /* Fade in */
 a::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0.1em;
-	background-color: #c0c0c0;
-	opacity: 0;
-	transition: opacity 300ms, transform 300ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #c0c0c0;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }
 
 a:hover::after,
 a:focus::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 /* Scale from center */
 a::after {
-	opacity: 1;
-	transform: scale(0);
-	transform-origin: center;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
 }
 
 a:hover::after,
 a:focus::after {
-	transform: scale(1);
+  transform: scale(1);
 }
 
 .background-color {
-	background-color: #fbf6ee;
-	border-radius: 8px;
-	visibility: visible;
-	opacity: 1;
-	transition: opacity 0.2s linear;
+  background-color: #fbf6ee;
+  border-radius: 8px;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s linear;
 }
 
-.row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 0px;
-	padding: 16px;
+.nav-container {
+  // Keep the navbar ontop of and centered of the rest of the app
+  max-width: 500px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 
-	.sections {
-		display: flex;
-		flex-direction: row;
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 16px;
 
-		.section {
-			padding-left: 42px;
-		}
-	}
+    .sections {
+      display: flex;
+      flex-direction: row;
+
+      .section {
+        padding-left: 42px;
+      }
+    }
+  }
 }
