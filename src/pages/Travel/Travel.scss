@@ -1,0 +1,60 @@
+.travel-container {
+    background-image: none;
+    background-color: #fbf6ee;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  
+    // Add spacing to compensate the navbar
+    padding-top: 61px;
+    //height: 553px;
+    margin-bottom: 196px;
+    border-radius: 8px;
+
+    min-width: 500px;
+
+
+    display: flex;
+    flex-direction: row;
+  
+    .row {
+      padding: 0px 16px 16px 16px;
+      display: flex;
+      flex-direction: column;
+
+        .header {
+            margin: 0px;
+            padding-left: 8px;
+        }
+
+        .tiles {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            .tile {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                cursor: pointer;
+
+                .thumbnail-subheader {
+                    margin: 0px;
+                }
+
+                .thumbnail-pic {
+                    width: 150px;
+                }
+
+                .vietnam-thumbnail {
+                    width: 150px;
+                }
+
+                .france-thumbnail {
+                    width: 150px;
+                }
+            }
+        }
+    }
+  }
+  
