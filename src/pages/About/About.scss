@@ -10,13 +10,15 @@
   margin-bottom: 196px;
   border-radius: 8px;
 
+  min-width: 741px;
+
   .row {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 
     .description {
-      padding: 16px;
+      padding: 16px 16px 0px 16px;
       display: flex;
       flex-direction: column;
 
